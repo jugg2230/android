@@ -14,26 +14,30 @@ import rx.Observable;
 
 public class HelpApiManager {
     private static HelpApiManager mInstant;
-    public static final String BaseUrl="1";
+    public static final String BaseUrl = "1";
 
-    private HelpApiManager(){
+    private HelpApiManager() {
 
     }
-    public static HelpApiManager getInstant(){
-        if(mInstant == null){
-            mInstant=new HelpApiManager();
+
+    public static HelpApiManager getInstant() {
+        if (mInstant == null) {
+            mInstant = new HelpApiManager();
         }
         return mInstant;
     }
-    public void sendRequest(String url, MySubscriber ss){
-        Retrofit retrofit=new Retrofit.Builder()
+
+    public void sendRequest(String url, MySubscriber ss) {
+        Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BaseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
     }
-    public interface HelpApi{
-         String parameter="";
+
+    public interface HelpApi {
+        String parameter = "";
+
         @GET(parameter)
         Observable<ReturnMsg> getData();
     }

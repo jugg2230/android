@@ -14,16 +14,19 @@ public class FragmentHelper {
     private BaseActivity mContext;
     private FragmentManager mFragmentManager;
     private FragmentTransaction mTransaction;
-    public FragmentHelper(BaseActivity mContext){
-        this.mContext=mContext;
-        mFragmentManager =mContext.getSupportFragmentManager();
-        mTransaction=mFragmentManager.beginTransaction();
+
+    public FragmentHelper(BaseActivity mContext) {
+        this.mContext = mContext;
+        mFragmentManager = mContext.getSupportFragmentManager();
+        mTransaction = mFragmentManager.beginTransaction();
     }
-    public void addFragment(Fragment fragment){
-        mTransaction.replace(mContext.getLayoutId(),fragment);
+
+    public void addFragment(Fragment fragment) {
+        mTransaction.replace(mContext.getLayoutId(), fragment);
         mTransaction.commit();
     }
-    public void removeFragment(Fragment fragment){
+
+    public void removeFragment(Fragment fragment) {
         mTransaction.remove(fragment);
         mTransaction.commit();
     }
