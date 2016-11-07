@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
     public abstract int getLayoutId();
+    public int mContentId;
     private BaseActivity thisActivity;
 
     /**
@@ -20,6 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
+        mContentId=getLayoutId();
         bindView();
     }
 }

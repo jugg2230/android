@@ -21,5 +21,5 @@ public abstract class BaseFragment extends Fragment {
         return mRootView;
     }
     public abstract int getLayoutId();
-    public abstract int bindView();
+    public abstract void bindView();
 }
