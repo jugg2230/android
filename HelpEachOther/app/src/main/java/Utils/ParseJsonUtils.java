@@ -1,8 +1,5 @@
 package Utils;
 
-import android.content.Intent;
-import android.util.Log;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.internal.Primitives;

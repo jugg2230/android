@@ -14,7 +14,7 @@ import android.provider.MediaStore;
 import java.io.FileNotFoundException;
 
 /**
- * Created by 1188 on 2016/9/8.
+ * Created by Dream on 2016/9/8.
  */
 public class CameraUtils {
     /**

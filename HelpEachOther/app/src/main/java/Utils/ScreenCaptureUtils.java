@@ -8,7 +8,7 @@ import android.os.Message;
 import java.lang.ref.WeakReference;
 
 /**
- * Created by Zdy on 2016/10/18.
+ * Created by Dream on 2016/10/18.
  */
 public class ScreenCaptureUtils {
 

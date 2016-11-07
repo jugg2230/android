@@ -22,7 +22,7 @@ import java.io.IOException;
 
 
 /**
- * Created by Zdy on 2016/8/8.
+ * Created by Dream on 2016/8/8.
  */
 public class BitMapUtils {
 

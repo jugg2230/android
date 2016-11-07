@@ -5,7 +5,7 @@ import android.os.Message;
 import android.os.SystemClock;
 
 /**
- * Created by Feng jibo on 2016/7/18.
+ * Created by Dream 2016/7/18.
  */
 public abstract class CustomCountDownTimer {
     /**

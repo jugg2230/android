@@ -12,7 +12,7 @@ import Base.BaseActivity;
 
 /**
  * Frgament辅助类
- * Created by Zdy on 2016/4/7.
+ * Created by Dream on 2016/4/7.
  */
 public class FragmentManagerHelper {
 

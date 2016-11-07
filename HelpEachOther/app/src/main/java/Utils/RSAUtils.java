@@ -13,7 +13,7 @@ import java.security.spec.X509EncodedKeySpec;
 import javax.crypto.Cipher;
 
 /**
- * Created by Zdy on 2016/7/12.
+ * Created by Dream on 2016/7/12.
  */
 public class RSAUtils {
 

@@ -3,7 +3,7 @@ package Utils;
 import android.graphics.Bitmap;
 
 /**
- * Created by Zdy on 2016/10/22.
+ * Created by Dream on 2016/10/22.
  */
 public class FastBlur {
     public static Bitmap doBlur(Bitmap sentBitmap, int radius, boolean canReuseInBitmap) {
